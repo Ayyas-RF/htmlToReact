@@ -14,16 +14,16 @@ const Home = () => {
           <Nav className="ms-auto">
             {" "}
             {/* Use ms-auto to push Nav to the right */}
-            <Nav.Link href="#about" className="text-white">
+            <Nav.Link href="#" className="text-white">
               About
             </Nav.Link>
-            <Nav.Link href="#team" className="text-white">
+            <Nav.Link href="#" className="text-white">
               Team
             </Nav.Link>
-            <Nav.Link href="#profile" className="text-white">
+            <Nav.Link href="#" className="text-white">
               Blog
             </Nav.Link>
-            <Nav.Link href="#blog" className="text-white">
+            <Nav.Link href="/register" className="text-white">
               Profile
             </Nav.Link>
           </Nav>
