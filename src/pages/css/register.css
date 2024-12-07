@@ -1,29 +1,29 @@
 body {
     background: linear-gradient(135deg, #6dd5fa, #2980b9);
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
   }
   
   h1,
   h2 {
     font-family: "Arial", sans-serif;
-    margin-bottom: 1rem; /* Add space below headings */
+    margin-bottom: 1rem;
   }
   
   #signup-form {
-    padding: 2rem; /* Add padding to the form */
+    padding: 2rem;
   }
   
   #signup-form .form-control {
     border-radius: 0.25rem;
-    margin-bottom: 1rem; /* Add space between form controls */
+    margin-bottom: 1rem;
   }
   
   .btn-primary {
     background-color: #3498db;
     border-color: #3498db;
     transition: background-color 0.3s ease;
-    padding: 0.5rem 1rem; /* Add padding to the button */
+    padding: 0.5rem 1rem;
   }
   
   .btn-primary:hover {
@@ -32,7 +32,7 @@ body {
   }
   
   .error {
-    color: red; /* Style for error messages */
-    font-size: 0.875rem; /* Slightly smaller font size for errors */
-    margin-top: 0.5rem; /* Space above error messages */
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
   }

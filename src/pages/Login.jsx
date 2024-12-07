@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import "./css/login.css";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -25,9 +28,9 @@ const Login = () => {
       return;
     }
 
-    // If success
+    // Valid means directed to home
     alert("Form submitted successfully!");
-    window.location.href = "/";
+    navigate("/")
   };
 
   return (
@@ -36,7 +39,7 @@ const Login = () => {
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white">
           <h1 className="mb-4">WELCOME!</h1>
           <img
-            src="public/home.svg"
+            src="/home.svg"
             alt="Home"
             className="img-fluid"
             style={{ maxWidth: "60%" }}
@@ -94,7 +97,7 @@ const Login = () => {
             <p>Or</p>
             <button className="btn btn-outline-secondary me-2">
               <img
-                src="public/google.svg"
+                src="/google.svg"
                 alt="Google"
                 style={{ width: "20px", marginRight: "5px" }}
               />{" "}
@@ -102,7 +105,7 @@ const Login = () => {
             </button>
             <button className="btn btn-outline-secondary">
               <img
-                src="public/facebook.svg"
+                src="/facebook.svg"
                 alt="Facebook"
                 style={{ width: "20px", marginRight: "5px" }}
               />{" "}
@@ -111,9 +114,9 @@ const Login = () => {
           </div>
           <p className="text-center mt-3">
             Don't have an account?{" "}
-            <a href="/register" className="text-decoration-none">
+            <Link to="/register" className="text-decoration-none">
               Sign Up
-            </a>
+            </Link>
           </p>
         </div>
       </div>

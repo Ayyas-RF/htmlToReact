@@ -8,12 +8,15 @@ body {
 
 body {
   font-family: Arial, sans-serif;
+  background-size: cover;
+}
+
+.backGround {
   background: url("/background.png") no-repeat center center fixed;
   background-size: cover;
 }
 
 header {
-  background-color: rgba(255, 111, 97, 0.8);
   color: #fff;
   padding: 10px 20px;
 }
@@ -33,8 +36,18 @@ header {
   text-decoration: underline;
 }
 
+.Qlink {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+}
+
+.Qlink:hover {
+  text-decoration: underline;
+}
+
 .full-page {
-  height: calc(100vh - 110px); /* Adjust 56px to the height of your navbar */
+  height: calc(100vh - 110px);
 }
 
 main {
@@ -77,7 +90,6 @@ footer a:hover {
 @media (max-width: 767.98px) {
   .navbar-nav {
     padding: 15px;
-    background-color: rgba(255, 111, 97, 0.8);
   }
 
   .nav-link {

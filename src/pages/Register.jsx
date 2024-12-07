@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import "./css/register.css"; // Assuming you have a CSS file for styles
+import "./css/register.css";
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [usernameError, setUsernameError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,8 +35,8 @@ const SignUp = () => {
 
     if (valid) {
       alert("Form submitted successfully!");
-      // Redirect to another page after the alert is dismissed
-      window.location.href = "/login";
+      // Redirect login page after the alert is dismissed
+      navigate("/login");
     }
   };
 
@@ -43,7 +46,7 @@ const SignUp = () => {
         <div className="col-md-6 d-flex flex-column justify-content-center align-items-center bg-primary text-white">
           <h1 className="mb-4">HELLO!</h1>
           <img
-            src="public/mountain.svg"
+            src="/mountain.svg"
             alt="Mountain"
             className="img-fluid"
             style={{ maxWidth: "60%" }}
@@ -85,10 +88,10 @@ const SignUp = () => {
             </button>
           </form>
           <p className="text-center mt-3">
-            Already have an account?{" "}
-            <a href="/login" className="text-decoration-none">
+            Already have an account? {""}
+            <Link to="/login" className="text-decoration-none">
               Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>
