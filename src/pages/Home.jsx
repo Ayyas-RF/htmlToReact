@@ -2,6 +2,7 @@ import React from "react";
 import "./css/home.css";
 import Container from "react-bootstrap/Container";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
@@ -51,12 +52,12 @@ const Home = () => {
       <footer className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 bg-dark text-white">
         <p className="mb-2 mb-md-0">Website made by VividTeam</p>
         <div>
-          <a href="#GitHub" className="text-white me-3">
+          <Link to="https://github.com/Ayyas-RF" className="text-white me-3">
             GitHub
-          </a>
-          <a href="#Telegram" className="text-white">
+          </Link>
+          <Link to="https://t.me/vikxl_lated" className="text-white">
             Telegram
-          </a>
+          </Link>
         </div>
       </footer>
     </div>
